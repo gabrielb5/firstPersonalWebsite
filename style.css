@@ -90,9 +90,7 @@ li {
 
 }
 
-span {
-  color: white;
-}
+
 
 .detel {
   margin-left: 8%;
@@ -107,7 +105,7 @@ span {
 }
 
 span {
-  color: orange;
+  color: blue;
 }
 
 .detel a{
@@ -118,4 +116,11 @@ span {
   display: inline-block;
   margin: 30px 0;
   color: gold;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }

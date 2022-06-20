@@ -1,10 +1,55 @@
 <html lang="en">
+<script>
+  function changeColor(obj) {
+    if (obj.style.color == 'orange') {
+      obj.style.color = 'black';
+    } else {
+      obj.style.color = 'orange';
+    }
+  }
+  function changeBgColor (obj, colorName) {
+    obj.style.backgroundColor = colorName;
+  }
+</script>
+
+
   <head>
     <link rel="stylesheet" href="style.css" />
-    <title>My Personal Website</title>
+    <title>GABRIEL BURGOS PERSONAL WEBSITE</title>
   </head>
+    <h1>Gabriel Burgos </h1>
   <body>
-    <h1>Hello World!</h1>
+    <div class="hero">
+      <nav>
+        <ul>
+          <li><a href="#"> HOME</a></li>
+          <li><a href="#"> ABOUT</a></li>
+          <li><a href="#"> PORTFOLIO</a></li>
+          <li><a href="#"> HIRE ME </a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <p> Welcome to my personal website! My name is Gabriel Burgos and I've been living in Puerto Rico my whole life. I enjoy sports, walking and having fun outdoors.</p>
+    <div>
+      <p> Currently I'm an accounting grad but I'm starting my journey as a software developer at Flatiron School. </p>
+      <div class="container"> 
+        <h2>Bellow are the projects that I want to get done: </h2>
+      </div>
+        <ol>
+          <li onmouseover="changeBgColor(this, 'green')" onmouseout="changeBgColor(this, 'whitesmoke')"> Time Attendance Self Service App</li>
+          <li onmouseover="changeBgColor(this, 'skyblue')" onmouseout="changeBgColor(this, 'whitesmoke')"> Property Rental app for Puerto Rico </li>
+        </ol>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
